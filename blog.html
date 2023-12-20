@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Ques 1 : Discuss the scope of var, let, and const</h1>
+    <h5>
+        In JavaScript, the scope of variables are chosen by using var, let, and const  and understanding these scopes is helpful and mentadatory for writing maintainable and bug-free code. Here's a discussion of the scope of each of these variable declarations:
+
+    </h5>
+
+    <span>
+        <h5>1. var:</h5>
+
+        <p>
+            Function Scope: Variables declared using the var keyword are limited to the scope of the function in which they are defined. This implies that they can only be accessed within the specific function, regardless of where in the function they are declared.
+
+           
+        </p>
+
+    </span>
+
+    <span>
+      <h5>2:Let:</h5>
+      <p>
+        Block Scope: Variables declared with let are block-scoped, meaning they are confined to the nearest enclosing pair of curly braces {} (blocks), whether that's a function, loop, or condition. This enhances code readability and reduces unintended variable access and modification.
+        Temporal Dead Zone (TDZ): Unlike var, variables declared with let are not hoisted to the top of the block. Instead, they are hoisted to the top of the block and remain in the "temporal dead zone" until the actual declaration. Accessing them before declaration results in a ReferenceError.
+      </p>
+
+    </span>
+
+    <span>
+        <h5>
+            3. const:
+        </h5>
+
+        <p>
+Block Scope: Like let, variables declared with const are block-scoped.
+Constant Value: Variables declared with const are meant to hold constant values, which means their value cannot be reassigned after declaration. However, for objects and arrays declared with const, the properties or elements can still be modified.
+
+        </p>
+
+
+    </span>
+
+
+    <h1>Q2. Tell us the use cases of null and undefined </h1>
+
+        <span>
+         <h5>
+            undefined 
+         </h5>   
+         <p>
+            Automatic Initialization: Variables that have been declared but haven't been assigned a value are automatically initialized with undefined. This is often used as the default value for function parameters.
+         </p>
+         <h5>
+            null:
+
+         </h5>
+
+         <p>
+            Explicit Absence of Value: null is used to represent an intentional absence of any object value or value that represents "nothing" or "empty." 
+         </p>
+        </span>
+
+        <span>
+            <h1>Q3. What do you mean by REST API?</h1>
+            <p>
+                REST API stands for Representational State Transfer Application Programming Interface. It is a set of architectural principles and constraints for designing networked applications. REST is not a specific technology or protocol but rather an architectural style that uses the HTTP protocol as its foundation. Key principles and characteristics of a REST API include: 
+                Statelessness: Each request from a client to a server must contain all the information needed to understand and process the request. The server should not rely on any stored client context. 
+            </p>
+
+        </span>
+
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- javascript area  -->
+
+    <script src="./app.js"></script>
+
+    <!-- bootstrap script  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
